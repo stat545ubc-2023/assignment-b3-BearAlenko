@@ -1,4 +1,4 @@
-### Penguin Analysis Dashboard
+# Penguin Analysis Dashboard
 
 ## App link:
 The link to the running Shiny app of my dashboard is:
