@@ -3,10 +3,10 @@ library(palmerpenguins)
 library(ggplot2)
 library(dplyr)
 
-## This app analyzes the palmerpenguins data based on bill lengths.
+## This app analyzes the palmerpenguins data.
 ## It has many functions:
 ## 1. It illustrates three outputs:
-##      a box plot of bill length by species,
+##      a box plot of flipper length by species,
 ##      a summarize table grouped by species and islands, 
 ##      and a full data table
 ## 2. A slider input to select the max bill length in data. By this function, we can see different plots and data in different subsets of bill length.
@@ -45,7 +45,7 @@ server <- function(input, output){
   output$myplot <- renderPlot({
     penguins %>%
       filter(bill_length_mm <= num_input()) %>% ## show the data with bill length <= input
-      ggplot(aes(x = species, y = bill_length_mm))+  ## the ggplot to plot box and jitter
+      ggplot(aes(x = species, y = flipper_length_mm))+  ## the ggplot to plot box and jitter
       geom_boxplot(aes(color = species))+
       geom_jitter(aes(color = island))
   })

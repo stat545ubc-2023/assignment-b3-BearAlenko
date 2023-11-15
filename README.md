@@ -10,10 +10,10 @@ https://zzh2015.shinyapps.io/assignment-b3-BearAlenko/
 
 ## Description:
 
-_This app analyzes the palmerpenguins data based on bill lengths._
+_This app analyzes the palmerpenguins data._
 It has many functions:
 1. It illustrates three outputs:
-     * a **box plot** of bill length by species.
+     * a **box plot** of flipper length by species.
      * a **summarize table** grouped by species and islands. 
      * a **full data table**.
 2. A **slider input** to select the max bill length in data. By this function, we can see different plots and data in different subsets of bill length to **gain insights in analysis**.
