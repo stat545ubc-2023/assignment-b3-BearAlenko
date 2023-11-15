@@ -2,6 +2,7 @@ library(shiny)
 library(palmerpenguins)
 library(ggplot2)
 library(dplyr)
+library(DT)
 
 ## This app analyzes the palmerpenguins data.
 ## It has many functions:
@@ -31,7 +32,7 @@ ui <- fluidPage(
       tabsetPanel(
         tabPanel("Plot", plotOutput("myplot")), # the output plot of box plot
         tabPanel("Summarise", tableOutput("mytable_summarise")), # the output summarise table
-        tabPanel("Table", tableOutput("mytable")) #plotOutput, textOutput, uiOutput, tableOutput
+        tabPanel("Table", dataTableOutput("mytable")) #plotOutput, textOutput, uiOutput, tableOutput
       )
     )
   )
@@ -72,7 +73,7 @@ server <- function(input, output){
   })
   
   # full table output
-  output$mytable <- renderTable({ ## out put the entire table in tab three
+  output$mytable <- renderDataTable({ ## out put the entire table in tab three
     if(input$sort) output_table() %>% arrange(island)
     else output_table()
   })
