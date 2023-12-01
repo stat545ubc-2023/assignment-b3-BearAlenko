@@ -13,6 +13,7 @@ https://zzh2015.shinyapps.io/B4CancerAnalysis/
 The code and the image are in /B4.
 * CancerAnalysisApp.R: the main code of the shiny app.
 * www/cancer-icon-2797418_1280.png: the cancer image used in app.
+* archive/: the old files of B3.
 
 ## Description:
 _This app analyzes the cancer sample data by analyzing the worst levels._
