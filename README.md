@@ -30,7 +30,6 @@ It has many functions:
 7. A **download button** for downloading the result table.
 
 ## Methods
-1. I first cut the worst radius and the worst concavity into four
-categories so that we can combine them together as one dimension **“worst level”** for easy diagnosis. The resulted worst_level has dxd categories where d is the chosen number of levels by users. By combining the two level variables, we can simulate an easy model for pre-diagnosis, for example, self diagnosis before seeing a doctor. 
-2. I also calculate **"worst value"**, the sum of normalized worst concavity and worst radius, as a representation of numeric worst level for plotting.
+1. I first cut the worst radius and the worst concavity into d (chosen by users) categories so that we can combine them together as one dimension **“worst level”** for easy diagnosis. The resulted worst_level has dxd categories where d is the chosen number of levels by users. By combining the two level variables, we can simulate an easy model for pre-diagnosis, for example, self diagnosis before seeing a doctor. 
+2. I also calculate **"worst value"**, the sum of normalized worst concavity and worst radius, as a representation of numeric worst level for plotting. The worst value aligns with the worst level and is a numeric representation of the worst level.
 
