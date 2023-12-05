@@ -27,9 +27,9 @@ It has many functions:
 4. A **cancer image** to make our dashboard more interesting and to align with the data frame "cancer_sample".
 5. **Separating tabs**. Because I have two tables and one plot, separating tabs to show them **makes the dashboard clear and pretty**.
 6. **Interactive table** can help users to choose how many data entries to show in a page and sort on different variables.
-7. ```diff - (new) ``` A **download button** for downloading the result table.
-8. ```diff - (new) ``` A **color chooser** for changing the color of boxes in the box plot. Some users may need help to see boxes in other colors.
-9. ```diff - (new) ``` A **text output** to show the rows of the summarised table. The different diagnosis has different ranges of levels in the data. It is important to tell the user that the number of rows is fewer than the possible combinations.
+7. $${\color{red}(new)}$$ A **download button** for downloading the result table.
+8. $${\color{red}(new)}$$ A **color chooser** for changing the color of boxes in the box plot. Some users may need help to see boxes in other colors.
+9. $${\color{red}(new)}$$ A **text output** to show the rows of the summarised table. The different diagnosis has different ranges of levels in the data. It is important to tell the user that the number of rows is fewer than the possible combinations.
 
 ## Methods
 1. **Worst level**: I first cut the worst radius and the worst concavity into d (chosen by users) categories so that we can combine them together as one dimension **“worst level”** for easy diagnosis. The resulted worst_level has dxd categories where d is the chosen number of levels by users. By combining the two level variables, we can simulate an easy model for pre-diagnosis, for example, self diagnosis before seeing a doctor. 
