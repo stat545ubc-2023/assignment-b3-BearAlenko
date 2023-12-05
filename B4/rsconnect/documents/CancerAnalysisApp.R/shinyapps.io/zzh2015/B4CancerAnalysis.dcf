@@ -5,7 +5,7 @@ account: zzh2015
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 10693621
-bundleId: 7996411
+bundleId: 8008666
 url: https://zzh2015.shinyapps.io/B4CancerAnalysis/
 version: 1
 asMultiple: FALSE
